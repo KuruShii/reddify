@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(../public/Roboto-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FBC40E;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #343F71;
+    display: flex;
+    justify-content: center;
+    min-width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 2px 6px black;
+}
+
+header h1 {
+    margin: auto 0;
+    color: white;
+    font-family: 'roboto', sans-serif;
+    margin-right: auto;
+}
+
+header ul {
+    display: block;
+    margin: auto;
+    margin-left: 10px;
+}
+
+header li {
+    display: block;
+    width: 35px;
+    background-color: white;
+    text-decoration: none;
+    height: 7px;
+    margin: 5px;
+}
+
+header ul:hover {
+    filter: invert(0.2)
+}
+
+header li:focus {
+    filter: invert(0.4)
+}
+
+aside {
+    background-color: rgba(52, 63, 113, 0.95);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    min-height: 100vh;
+    min-width: 300px;
+    max-width: 100vw;
+    height: fit-content;
+    width: 50%;
+    box-shadow: 2px 2px 6px black;
+    display: none;
+    overflow: hidden;
+}
+
+aside a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: 45px;
+    line-height: 2;
+}
+
+aside button {
+    background-color: transparent;
+    border: 0;
+    font-size: 2.3rem;
+    float: right;
+    color: white;
+    margin: 15px;
+}
+
+aside button:hover {
+    color: lightgray;
+}
+
+aside button:active {
+    color: gray;
+}
+
+aside input[type=text] {
+    width: 50%;
+    height: 45px;
+    background-color: rgba(251, 196, 14, 0.7);
+    border-radius: 50px;
+    border: 0;
+    box-shadow: 2px 2px 4px black;
+    display: block;
+    margin: 55px auto;
+    padding: 5px;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    min-width: 200px;
+}
+
+aside h2 {
+    color: white;
+    margin: 20px 30px;
+    text-decoration: underline;
+}
+
+aside input[type=submit] {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 2;
+    margin-left: 10%;
+    background-color: transparent;
+    border: 0;
+}
+
+main select {
+    width: 10%;
+    font-size: 1.2rem;
+    background-color: #343F71;
+    border: 0;
+    box-shadow: 2px 2px 6px black;
+    color: white;
+    margin: 95px 0 0 15px;
+    min-width: 150px;
+}
+
+main div, article div {
+    background-color: #343F71;
+    width: 90%;
+    min-width: 300px;
+    margin: 40px auto;
+    overflow: hidden;
+    padding: 40px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px black;
+    color: white;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+main div p, article div p {
+    width: 95%;
+    max-height: 500px;
+    overflow: hidden;
+    margin: 0 4%;
+    
+}
+
+main div h3, article div h3 {
+    margin: 0 20px;
+    float: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+main div h4, article div h4 {
+    font-size: 1.1rem;
+    margin: 10px 30px;
+    letter-spacing: 2px;
+}
+
+main div h2, article div h2 {
+    text-align: center;
+    width: 98%;
+    display: block;
+    margin: 15px auto;
+}
+
+main div a, article div a {
+    color: white;
+    text-decoration: none;
+}
+
+main div ol, main div ul, article div ol, article div ul {
+    list-style: none;
+}
+
+main div img, article div img {
+    width: 80%;
+    max-height: 500px;
+    max-width: 800px;
+    display: block;
+    margin: 10px auto;
+}
+
+main div iframe, article div iframe {
+    width: 40vh;
+    max-width: 800px;
+    max-height: 800px;
+    height: 25vh;
+    min-height: 200px;
+    min-width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+article div {
+    max-height: none;
+}
+
+article div p {
+    max-height: none;
+}
+
+article div a {
+    text-decoration: underline;
+}
